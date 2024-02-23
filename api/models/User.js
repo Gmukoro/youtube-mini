@@ -16,9 +16,6 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    password: {
-      type: String,
-    },
     subscribers: {
       type: Number,
       default: 0,
@@ -27,7 +24,10 @@ const UserSchema = new mongoose.Schema(
       type: [String],
     },
   },
-  { timeStamps: true }
+  { timestamps: true }
 );
 
-export default mongoose.models("User", UserSchema);
+// export default mongoose.models("User", UserSchema);
+const User = mongoose.model("User", UserSchema);
+
+export default User;
