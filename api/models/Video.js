@@ -6,7 +6,7 @@ const VideoSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    videoTitle: {
+    title: {
       type: String,
       required: true,
     },
@@ -14,11 +14,11 @@ const VideoSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    imgURL: {
+    imgUrl: {
       type: String,
       required: true,
     },
-    videoURL: {
+    videoUrl: {
       type: String,
       required: true,
     },
@@ -26,7 +26,7 @@ const VideoSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
-    tag: {
+    tags: {
       type: [String],
       default: [],
     },
@@ -39,7 +39,7 @@ const VideoSchema = new mongoose.Schema(
       default: [],
     },
   },
-  { timeStamps: true }
+  { timestamps: true }
 );
 
-export default mongoose.models("Video", VideoSchema);
+export default mongoose.model("Video", VideoSchema);
