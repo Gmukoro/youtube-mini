@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ThumbsUpOutlinedIcon from "@mui/icons-material/ThumbsUpOutlined";
+import ThumbsupOutlinedIcon from "@mui/icons-material/ThumbsupOutlined";
 import ThumbsDownOffAltOutlinedIcon from "@mui/icons-material/ThumbsDownOffAltOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import AddTaskOutlinedIcon from "@mui/icons-material/AddTaskOutlined";
@@ -65,7 +65,7 @@ const Video = () => {
           <Info>7,879,170 views . Jun 22, 2022</Info>
           <Buttons>
             <Button>
-              <ThumbsUpOutlinedIcon /> 123
+              <ThumbsupOutlinedIcon /> 123
             </Button>
             <Button>
               <ThumbsDownOffAltOutlinedIcon /> Dislike
